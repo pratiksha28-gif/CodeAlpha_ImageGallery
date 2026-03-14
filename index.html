@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Responsive Image Gallery</h1>
+
+<div class="gallery">
+
+<img src="images/img1.jpg" onclick="openLightbox(0)">
+<img src="images/img2.jpg" onclick="openLightbox(1)">
+<img src="images/img3.jpg" onclick="openLightbox(2)">
+<img src="images/img4.jpg" onclick="openLightbox(3)">
+
+</div>
+
+<div id="lightbox">
+
+<span class="close" onclick="closeLightbox()">×</span>
+<button class="prev" onclick="prevImage(-1)">❮</button>
+<img id="lightbox-img">
+<button class="next" onclick="nextImage(1)">❯</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
